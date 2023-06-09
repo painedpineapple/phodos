@@ -1,0 +1,20 @@
+type jsTypedArrayUnit8Array
+
+@module("js-base64") external version: string = "version"
+@module("js-base64") external btoaPolyfill: string => string = "btoaPolyfill"
+@module("js-base64") external _btoa: string => string = "_btoa"
+@module("js-base64")
+external fromUint8Array: (array<jsTypedArrayUnit8Array>, bool) => string = "fromUint8Array"
+@module("js-base64") external utob: string => string = "utob"
+@module("js-base64") external encode: (string, bool) => string = "encode"
+@module("js-base64") external encodeURI: string => string = "encodeURI"
+@module("js-base64") external btou: string => string = "btou"
+@module("js-base64") external atobPolyfill: string => string = "atobPolyfill"
+@module("js-base64") external _atob: string => string = "_atob"
+@module("js-base64") external toUint8Array: string => array<jsTypedArrayUnit8Array> = "toUint8Array"
+@module("js-base64") external toUint8ArrayWithArrInt: string => array<int> = "toUint8Array"
+@module("js-base64") external decode: string => string = "decode"
+@module("js-base64") external isValid: 'a => bool = "isValid"
+@module("js-base64") external extendString: unit => unit = "extendString"
+@module("js-base64") external extendUint8Array: unit => unit = "extendUint8Array"
+@module("js-base64") external extendBuiltins: unit => unit = "extendBuiltins"
